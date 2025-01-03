@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jwt-auth-internal-service
+spec:
+  selector:
+    app: jwt-auth-service-app
+  ports:
+    - protocol: TCP
+      port: 80       # Port that the service will expose
+      targetPort: 3000  # Port that the container is listening on

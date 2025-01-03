@@ -1,0 +1,23 @@
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+    "username":"test1",
+    "password":"password1"
+}
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username":"test1",
+    "password":"password1"
+}
+
+###
+
+GET http://localhost:3000/test
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0ZXN0MSIsInBhc3N3b3JkIjoicGFzc3dvcmQxIiwiaWF0IjoxNzIxMjU1MTM5LCJleHAiOjE3MjEyNTg3Mzl9.1ZN1ePBwJEz918svLGaykrb6lPPUOPFK1GfZdYxzn1Y
