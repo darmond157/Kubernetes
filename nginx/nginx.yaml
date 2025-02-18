@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   labels:
     app: nginx1
-  name: nginx1-pod
+  name: nginx-pod1
   namespace: nginx
 spec:
   containers:
@@ -33,12 +33,12 @@ kind: Pod
 metadata:
   labels:
     app: nginx2
-  name: nginx2-pod
+  name: nginx-pod2
   namespace: nginx
 spec:
   containers:
     - name: nginx-container2
-      image: nginx:latest
+      image: nginx:1.27.4
 
 ---
 
