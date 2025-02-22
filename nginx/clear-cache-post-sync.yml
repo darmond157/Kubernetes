@@ -10,6 +10,6 @@ spec:
       containers:
       - name: curl-container
         image: curlimages/curl:latest
-        command: ["curl", "-X", "POST","-H","Authorization: Apikey f5503d2b-5eef-51d8-9b0b-ef88a06cd3dc","-H","Content-Type: application/json","--data",'{"purge": "all"}', "https://napi.arvancloud.ir/cdn/4.0/domains/arcaptcha.co/caching/purge"]
+        command: ["curl", "-X", "POST","-H","Authorization: Apikey XXXX","-H","Content-Type: application/json","--data",'{"purge": "all"}', "https://napi.arvancloud.ir/cdn/4.0/domains/arcaptcha.co/caching/purge"]
       restartPolicy: Never
   backoffLimit: 1
